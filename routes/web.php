@@ -12,6 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', "ContentsController@home");
+
+Route::get('/clients', "ClientController@index");
+
+Route::get('clients/new', "ClientController@newClient");
+
+Route::post('clients/new', "ClientController@create");
 
 Route::get('/home', function () {
     $data = [];
