@@ -30,9 +30,6 @@ Route::post('reservations/{client_id}', "RoomsController@checkAvailableRooms");
 
 Route::get('book/room/{client_id}/{room_id}/{date_in}/{date_out}', "ReservationsController@bookRoom");
 
-Route::get('reservations/{client_id}', "RoomsController@checkAvailableRooms");
-
-
 Route::get('/home', function () {
     $data = [];
     $data["limerick"] = "Just kidding";
