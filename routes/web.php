@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = [];
+    $data["limerick"] = "Just kidding";
+    return view('welcome',$data);
 });
