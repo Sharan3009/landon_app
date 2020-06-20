@@ -18,7 +18,6 @@
           <ul class="dropdown menu" data-dropdown-menu="tckp8q-dropdown-menu" role="menubar">
             <li role="menuitem"><a href="./home.html">Home</a></li>
             <li role="menuitem"><a href="./clients.html">Clients</a></li>
-            <li role="menuitem"><a href="./reservations.html">Reservations</a></li>
           </ul>
         </div>
       </div>
