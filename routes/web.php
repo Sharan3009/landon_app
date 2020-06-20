@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     $data = [];
     $data["limerick"] = "Just kidding";
     return view('welcome',$data);
 });
+
+Route::get('/di', "ClientController@di");
