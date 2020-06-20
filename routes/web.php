@@ -20,3 +20,16 @@ Route::get('/home', function () {
 });
 
 Route::get('/di', "ClientController@di");
+
+
+Route::get('/facades/db', function(){
+    return DB::select('SELECT * from table');
+});
+
+Route::get('/facades/encrypt', function(){
+    return Crypt::encrypt('123456789');
+});
+
+Route::get('/facades/decrypt', function(){
+    return Crypt::decrypt('eyJpdiI6IkhxRWM5MEtXSEFHWmFXR2JxaXNYa1E9PSIsInZhbHVlIjoiK1R0enQ5L2ZHZHg1L2xNTU5Ib3N2bVI0RVNUTmR1SGpKQTRMWGlKYkNmQT0iLCJtYWMiOiI3OTczNzI0NzM3YmZjMDkxZDdmMzRmNmIzOTRmMmQ3NTQ0NWNmNjEzYjA2ZTY4ZmRiYTk2MTY1NDBmNjRiZGE2In0=');
+});
